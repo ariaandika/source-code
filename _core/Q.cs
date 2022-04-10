@@ -19,14 +19,6 @@ public class Q : MonoBehaviour
         print(message.ToString());
     }
 
-    // Input -------------------------------------------------------------------------------------------------------------------------------------------------
-    public float GA(string axisName){
-        return Input.GetAxis(axisName);
-    }
-    public float GAR(string axisName,bool isRaw=true){
-        return Input.GetAxisRaw(axisName);
-    }
-
     // Other -------------------------------------------------------------------------------------------------------------------------------------------------
     public bool OtApprox(float a, float b, float threshold)
     {
