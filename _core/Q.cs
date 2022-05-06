@@ -73,6 +73,11 @@ public class Q : MonoBehaviour
     {
         return new Vector2(x.x, x.y);
     }
+	// Return a eulerAngle that look at target
+    public Vector3 LookAt2D(Vector2 current, Vector2 target)
+    {
+        return Vector3.back * Vector2.SignedAngle(target - current, Vector2.right);
+    }
 
     // Other -------------------------------------------------------------------------------------------------------------------------------------------------
     public bool Approx(float a, float b, float threshold = 0.01f)
